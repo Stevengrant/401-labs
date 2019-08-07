@@ -26,10 +26,10 @@ public class LibraryTest {
         assertTrue("Returns true when array contains duplicates",classUnderTest.containsDuplicates(dupes) );
         assertFalse("Returns false when array does not contain duplicates",classUnderTest.containsDuplicates(noDupes) );
     }
-    @Test public void test_averages(){
+    @Test public void test_average(){
         Library classUnderTest = new Library();
         int[] input = new int[]{2, 2, 3, 3};
-        assertEquals("Returns average",classUnderTest.averages(input),2.5,0);
+        assertEquals("Returns average",classUnderTest.average(input),2.5,0);
     }
     @Test public void test_averagesArrays(){
         Library classUnderTest = new Library();
@@ -39,7 +39,7 @@ public class LibraryTest {
                 {6,7,8}
         };
         int[] expected = new int[]{2,3,4};
-        assertArrayEquals("Should return the array with the lowest average",classUnderTest.averagesArrays(testArrays),expected);
+        assertArrayEquals("Should return the array with the lowest average",classUnderTest.averageArrays(testArrays),expected);
     }
 
 

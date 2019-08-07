@@ -24,7 +24,7 @@ public class Library {
         }
         return false;
     }
-    public double averages(int[] input){
+    public double average(int[] input){
         double res = 0;
         for(int i = 0; i < input.length; i++){
             res+= input[i];
@@ -32,12 +32,12 @@ public class Library {
         res = res/input.length;
         return res;
     }
-    public int[] averagesArrays(int[][] input){
-        double lowest = averages(input[0]);
+    public int[] averageArrays(int[][] input){
+        double lowest = average(input[0]);
         int lowestIndex = 0;
         for (int i = 0; i <input.length; i++){
-            double currentAverage = averages(input[i]);
-            if (averages(input[i])<lowest){
+            double currentAverage = average(input[i]);
+            if (average(input[i])<lowest){
                 lowest = currentAverage;
                 lowestIndex = i;
             }
