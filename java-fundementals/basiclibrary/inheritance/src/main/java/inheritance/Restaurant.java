@@ -5,7 +5,7 @@ package inheritance;
 
 import java.util.ArrayList;
 
-public class Restaurant {
+public class Restaurant implements Business{
     String name;
     Double avererageStars = 0.0;
     int priceCategory;
